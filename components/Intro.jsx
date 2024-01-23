@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
+import TextShine from './TextChine'
 
 
 const Intro = () => {
@@ -64,12 +65,19 @@ const Intro = () => {
                     className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
                     online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
                     hover:bg-gray-950 active:scale-100 ">
-                    Contact me here <BsArrowRight className="opacity-80" />
+                        <div className='flex items-center  relative '
+                        >
+                            <div className='flex items-center'>
+                                <TextShine>Contact me here </TextShine><BsArrowRight className="mx-2 opacity-80" />
+                            </div>
+                            
+                            
+                        </div>
                     </Link>
                         <a
                         className="bg-white text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full
                         online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
-                        hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer">
+                        hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2">
                         Download CV
                             <HiDownload className="opacity-80" href="/CV.pdf" download />
                         </a>
@@ -90,6 +98,7 @@ const Intro = () => {
                             <FaGithubSquare />
                         </a>
             </motion.div>
+            <TextShine />
         </section>
     );
 }
