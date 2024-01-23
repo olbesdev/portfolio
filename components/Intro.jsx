@@ -17,7 +17,7 @@ const Intro = () => {
         <section
         id="#home"
         className="scroll-mt-24 mb-28 max-w-[50rem] text-center sm:mb-0">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mt-8">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -77,9 +77,10 @@ const Intro = () => {
                         <a
                         className="bg-white text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full
                         online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
-                        hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2">
+                        hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2 text-sm sm:text-lg md:2xl bg-[length:250%_100%] 
+                        ">
                         Download CV
-                            <HiDownload className="opacity-80" href="/CV.pdf" download />
+                            <HiDownload className="opacity-80 sm:text-lg md:2xl" href="/CV.pdf" download />
                         </a>
 
                         <a
