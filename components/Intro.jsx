@@ -45,11 +45,11 @@ const Intro = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             >
-            <span className="text-2xl font-bold">
+            <span className="text-2xl font-bold text-slate-200">
                 Hello 🖐, I &apos; m {name},{" "}
             </span>
 
-            <span className="text-2xl">I &apos; am a {description}</span>
+            <span className="text-2xl text-slate-200">I &apos; am a {description}</span>
             </motion.h1>
 
             <motion.div
