@@ -16,7 +16,8 @@ const Intro = () => {
     return (
         <section
         id="#home"
-        className="scroll-mt-24 mb-28 max-w-[50rem] text-center sm:mb-0">
+        className="scroll-mt-24 mb-28 max-w-[50rem] text-center sm:mb-0
+        ">
             <div className="flex items-center justify-center mt-8">
                 <div className="relative">
                     <motion.div
