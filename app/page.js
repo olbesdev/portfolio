@@ -1,7 +1,10 @@
 
 import { About } from "@/components/About";
+import Contact from "@/components/Contact";
 import { Experience } from "@/components/Experience";
 import Intro from "@/components/Intro";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -14,8 +17,14 @@ export default function Home() {
                 
                 <Experience />
                 
+                <Skills />
+
+                <Projects />
+                
                 <About />
-            
+
+                <Contact />
+
             </section>
             
 
