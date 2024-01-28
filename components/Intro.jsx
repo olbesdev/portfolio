@@ -76,7 +76,7 @@ const Intro = () => {
                         </div>
                     </Link>
                         <a
-                        className="bg-white text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full
+                        className="bg-white text-gray-950 px-7 py-2 flex items-center gap-2 rounded-full
                         online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
                         hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2 text-sm sm:text-lg md:2xl bg-[length:250%_100%] 
                         ">

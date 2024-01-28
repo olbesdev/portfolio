@@ -12,7 +12,7 @@ export const Experience = () => {
     
   return (
     <motion.section
-      className="scroll-mt-24 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 text-slate-200"
+      className="scroll-mt-24 mt-24 max-w-[45rem] text-center leading-8 sm:mb-40 text-slate-200"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -35,11 +35,11 @@ export const Experience = () => {
                     <p className="text-sm text-gray-200">
                       {experience.description}
                     </p>
-                    <div className="mt-2">
+                    <div className="mt-8">
                       <Link
                         href={experience.linkweb}
-                        className="text-sm px-5 py-4 font-semibold text-slate-200 rounded-full focus:scale 
-                        hover:bg-violet-500 hover:scale-105 hover:text-slate-100 hover: transition-all hover:duration-200 hover:ease-in-out"
+                        className="text-sm px-5 py-4 font-semibold text-slate-200 rounded-full border border-spacing-1 border-white focus:scale 
+                        hover:bg-slate-200 hover:scale-105 hover:text-blue-900 hover: transition-all hover:duration-200 hover:ease-in-out"
                         target="_blank">
                         Get to know them
                       </Link>

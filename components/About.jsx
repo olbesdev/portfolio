@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 
 export const About = () => {
   return (
-      <section className="flex mt-28 min-h-screen text-slate-200 font-normal">
+      <section className="flex mt-22 min-h-screen text-slate-200 font-normal">
           <motion.div
-              className="scroll-mt-24 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+              className="scroll-mt-24 mt-24 max-w-[45rem] text-center leading-8 sm:mb-40"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.175 }}
