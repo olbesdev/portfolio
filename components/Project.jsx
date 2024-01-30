@@ -18,10 +18,12 @@ const Project = ({site, title, company, date, description, website, imgUrl, tech
                     tracking-wider text-white font-semibold rounded-full"
                     key={index}
                     >#{tech}</li>
-                ))}
+                    ))}
             </ul>
-
             <Image src={imgUrl} alt="Proyect I worked on" quality={95} />
+
+
+
 
         </section>
     )
