@@ -16,7 +16,8 @@ module.exports = {
           
         },
         animation: {
-          "background-shine": "background-shine 2s linear infinite"
+          "background-shine": "background-shine 2s linear infinite",
+          "border-width": "border-width 3s infinite alternate"
         },
         keyframes: {
           "background-shine": {
@@ -25,8 +26,21 @@ module.exports = {
             },
             "to": {
               "backgroundPosition": "-200% 0"
-            }
+            },
+            
+            "keyframes": {
+              "border-width": {
+                "from": {
+                  "width": "10px",
+                  "opacity": "0"
+                },
+                "to": {
+                  "width": "100px",
+                  "opacity": "1"
+                }
           }
+        }
+      }
         }
       },
     },

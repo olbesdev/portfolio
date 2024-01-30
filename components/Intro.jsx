@@ -75,13 +75,13 @@ const Intro = () => {
                             
                         </div>
                     </Link>
-                        <a
+                        <a href='/CV.pdf' download='CV.pdf'
                         className="bg-white text-gray-950 px-7 py-2 flex items-center gap-2 rounded-full
                         online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
                         hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2 text-sm sm:text-lg md:2xl bg-[length:250%_100%] 
                         ">
                         Download CV
-                            <HiDownload className="opacity-80 sm:text-lg md:2xl" href="/CV.pdf" download />
+                            <HiDownload className="opacity-80 sm:text-lg md:2xl" />
                         </a>
 
                         <a

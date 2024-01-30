@@ -1,7 +1,9 @@
-//'use client'
+'use client'
 import React from 'react'
 import SectionHeading from '@/components/SectionHeading'
 import { BsArrowRight } from 'react-icons/bs'
+import { motion } from 'framer-motion'
+
 
 
 const Contact = () => {
@@ -11,7 +13,14 @@ const Contact = () => {
           className="scroll-mt-24 max-w-[64rem] text-center leading-8 sm:mb-40">
 
           <SectionHeading>Contact me</SectionHeading>
-          <div className=" max-w-[64rem] text-start border-spacing-1 border-slate-200 border-l-lime-50 leading-8 sm:mb-40">
+          <motion.div className=" max-w-[64rem] text-start border-spacing-1 border-slate-200 border-l-lime-50 leading-8 sm:mb-40"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+              type: "tween",
+              duration: 0.3,
+          }}
+          >
               <form method='POST' action="" className="flex justify-center min-w-36 w-96 mt-3">
                 
                 <div className="bg-blue-950 p-4 rounded-lg">
@@ -82,7 +91,7 @@ const Contact = () => {
                 </div>
               </div>
             </form>
-          </div>
+          </motion.div>
       </section>
           );
 }
