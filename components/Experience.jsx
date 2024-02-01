@@ -13,13 +13,13 @@ export const Experience = () => {
     
   return (
     <motion.section
-      className="scroll-mt-24 mt-24 max-w-[45rem] text-center leading-8 sm:mb-40 text-slate-200"
+      className="scroll-mt-24 mt-24 max-w-[85rem] text-center leading-8 sm:mb-40 text-slate-200 sm:block sm:max-w-full"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="experience">
       <SectionHeading>My Experience</SectionHeading>
-      <div className="text-2xl">
+      <div className="text-xl">
             {experienceData.map((experience, index) => (
               <Fragment key={index}>
                 <TimeLineExperience {...experience} />
