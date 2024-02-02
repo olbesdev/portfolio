@@ -1,32 +1,47 @@
-import React from "react";
-import { projectData } from '@/lib/data'
-import Image from "next/image";
+'use client'
+import React, { Fragment } from "react";
+import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import { FaWordpressSimple } from "react-icons/fa6";
 
 const Project = ({site, title, company, date, description, website, imgUrl, technologies}) => {
     return (
-        <section className="bg-gray-100 h-auto max-w-[42rem] border border-black/5 
-        overflow-hidden sm:pr-8"
-        >
-            <h3 className="text-2xl font-semibold">{site}</h3>
-            <h4 className="text-lg text-gray-700">{title}</h4>
-            <h5 className="text-lg text-gray-500">{company}</h5>
-            <p className="text-lg text-gray-500">{date}</p>
-            <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
-            <ul className="flex flex-wrap mt-4 gap-2">
-                {technologies.map((tech, index) => (
-                    <li className="bg-blue-950 px-3 py-1 text-[0.7rem] uppercase
-                    tracking-wider text-white font-semibold rounded-full"
-                    key={index}
-                    >#{tech}</li>
-                    ))}
-            </ul>
-            <Image src={imgUrl} alt="Proyect I worked on" quality={95} />
-
-
-
-
+        <section className="flex max-w-full">
+            <Card className=" max-w-[600px] ">
+                <CardHeader className="flex gap-3">
+                    <Image
+                        alt="logo develop"
+                        height={60}
+                        radius="sm"
+                        src={imgUrl}
+                        width={60}
+                    />
+                    <div className="flex flex-col">
+                        <p className="text-md text-slate-100 font-semibold">{site}</p>
+                        <p className="text-small text-default-500 text-slate-100">
+                            {website}
+                        </p>
+                        <p className="text-xs text-slate-100">{date}</p>
+                    </div>
+                </CardHeader>
+                <Divider />
+                <CardBody>
+                    <p className="text-slate-100">
+                        {description}
+                    </p>
+                </CardBody>
+                <Divider />
+                <CardFooter>
+                    <Link
+                        isExternal
+                        showAnchorIcon
+                        href={website} className="text-slate-100 text-sm">
+                        View site
+                    </Link>
+                </CardFooter>
+            </Card>
         </section>
-    )
-};
+    );
+  }
+
 
 export default Project;

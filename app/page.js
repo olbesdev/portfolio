@@ -1,3 +1,4 @@
+'use client';
 import { Fragment } from "react";
 
 import  { About }  from "@/components/About";
@@ -8,29 +9,30 @@ import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 
+import { NextUIProvider } from "@nextui-org/react";
+
 export default function Home() {
     return (
         <Fragment>
-            <section className="flex min-w-1 min-h-screen flex-col items-center justify-between p-14 
-            bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900">
-                
-                <Intro />
+            <NextUIProvider>
+                <section
+                    className="flex min-w-1 min-h-screen flex-col items-center justify-between p-14 
+                    bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900">
+                    <Intro />
 
-                <Divider />
-                
-                <Experience />
-                
-                <Skills />
+                    <Divider />
 
-                <Projects />
-                
-                <About />
+                    <Experience />
 
-                <Contact />
+                    <Skills />
 
-            </section>
-            
+                    <Projects />
 
+                    <About />
+
+                    <Contact />
+                </section>
+            </NextUIProvider>
         </Fragment>
     );
 }

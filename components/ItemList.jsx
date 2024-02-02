@@ -11,6 +11,6 @@ const ItemList = () => {
     </div>
   )
 }
-console.log(experienceData[0])
+
 
 export default ItemList
