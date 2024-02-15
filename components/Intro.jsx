@@ -29,7 +29,7 @@ const Intro = () => {
                         }}
                     >
                         <Image
-                        className="h-48 w-48 rounded-full border-[0.35rem] border-gray-100 shadow-xl hover:scale-105 
+                        className="h-48 w-48 rounded-full border-[0.35rem] border-gray-200 shadow-xl hover:scale-105 
                         transition-all duration-500 ease-in-out"
                         src={`/profile.png`}
                         alt="profile image"
@@ -47,7 +47,7 @@ const Intro = () => {
             animate={{ opacity: 1, y: 0 }}
             >
             <span className="text-2xl font-bold text-slate-200">
-                Hello 🖐, I &apos; m {name},{" "}
+                Hello 👋, I &apos; m {name},{" "}
             </span>
 
             <span className="text-2xl text-slate-200">I &apos; am a {description}</span>
@@ -63,7 +63,7 @@ const Intro = () => {
             >
                     <Link
                     href="#contact"
-                    className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
+                    className="bg-gray-900 text-slate-200 px-7 py-3 flex items-center gap-2 rounded-full
                     online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
                     hover:bg-gray-950 active:scale-100 ">
                         <div className='flex items-center  relative '
@@ -76,25 +76,25 @@ const Intro = () => {
                         </div>
                     </Link>
                         <a href='/CV.pdf' download='CV.pdf'
-                        className="bg-white text-gray-950 px-7 py-2 flex items-center gap-2 rounded-full
+                        className="bg-slate-200 text-gray-950 px-7 py-2 flex items-center gap-2 rounded-full
                         online-none focus:scale hover:scale-105 transition-all duration-200 ease-in-out
-                        hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2 text-sm sm:text-lg md:2xl bg-[length:250%_100%] 
+                        hover:bg-slate-200 hover:text-gray-950 active:scale-100 hover:cursor-pointer border-gray-200 border-2 text-sm sm:text-lg md:2xl bg-[length:250%_100%] 
                         ">
                         Download CV
                             <HiDownload className="opacity-80 sm:text-lg md:2xl" />
                         </a>
 
                         <a
-                        className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 text-[1.45rem] rounded-full ocus:scale hover:scale-105 transition-all 
-                        duration-200 ease-in-out hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer"
+                        className="bg-slate-200 text-gray-700 px-4 py-4 flex items-center gap-2 text-[1.45rem] rounded-full ocus:scale hover:scale-105 transition-all 
+                        duration-200 ease-in-out hover:bg-slate-200 hover:text-gray-950 active:scale-100 hover:cursor-pointer"
                         href="https://linkedin.com/in/olbesdev"
                         target="_blank">
                             <BsLinkedin />
                         </a>
 
                         <a
-                        className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 text-[1.45rem] rounded-full ocus:scale hover:scale-105 transition-all 
-                        duration-200 ease-in-out hover:bg-white hover:text-gray-950 active:scale-100 hover:cursor-pointer"
+                        className="bg-slate-200 text-gray-700 px-4 py-4 flex items-center gap-2 text-[1.45rem] rounded-full ocus:scale hover:scale-105 transition-all 
+                        duration-200 ease-in-out hover:bg-slate-200 hover:text-gray-950 active:scale-100 hover:cursor-pointer"
                         href="https://github.com/olbesdev"
                         target="_blank">
                             <FaGithubSquare />

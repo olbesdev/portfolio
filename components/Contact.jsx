@@ -21,7 +21,7 @@ const Contact = () => {
               duration: 0.3,
           }}
           >
-              <form method='POST' action="" className="flex justify-center min-w-36 w-96 mt-3">
+              <form method='POST' action="" className="flex justify-center min-w-52 w-96 mt-3">
                 
                 <div className="bg-blue-950 p-4 rounded-lg">
                   <div className="relative bg-inherit">
@@ -82,7 +82,7 @@ const Contact = () => {
                       Write a comment
                   </label>
 
-                  <div className="group cursor-pointer flex justify-center bg-blue-800 rounded text-gray-200 hover:text-gray-50 transition ease-in-out duration-200">
+                  <div className="group cursor-pointer flex justify-center bg-blue-800 rounded text-gray-200 hover:text-gray-50 transition ease-in-out duration-200 mt-3">
                   Send me 
                     <span aria-hidden="true" className="flex items-center translate-x-0 group-hover:translate-x-2 
                     transition-transform ease-in-out duration-200 px-1"> <BsArrowRight />

@@ -3,13 +3,15 @@ import Link from 'next/link'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdWork } from "react-icons/md";
-import { experienceData } from '@/lib/data';
 import Buttons from '@/components/Buttons';
 
 
 const TimeLineExperience = ({id, company, title, startDate, endDate, description, linkweb}) => {
     return (
-        <VerticalTimeline>
+        
+        <VerticalTimeline
+        layout="1-column-left"
+        animate={true}>
             <React.Fragment key={id}>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work h-auto sm:absolute"
@@ -20,16 +22,17 @@ const TimeLineExperience = ({id, company, title, startDate, endDate, description
                     date={endDate}
                     icon={<MdWork />}
                     iconClassName="text-white"
-                    iconSize="1.2rem"
-                    layout={'1-columns-right'}
+                    iconSize="1.1rem"
                     animate={true}
                 >
                     <h3 className="vertical-timeline-element-title text-">{title}</h3>
                     <h4 className="vertical-timeline-element-subtitle">{company}</h4>
                     <p>{startDate} - {endDate}</p>
-                    <p className='text-sm'>{description}</p>
-                    <Link href={linkweb}><Buttons>Visit site</Buttons>
-                        
+                    <p className='text-md px-0 sm:px-10'>{description}</p>
+                    <Link href={linkweb}>
+                    <div className="flex gap-2 justify-center">
+                        <Buttons className="flex mx-4" target={"_blank"}> Visit site </Buttons>
+                    </div>    
                     </Link>
                 </VerticalTimelineElement>
             </React.Fragment>
